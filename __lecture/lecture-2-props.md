@@ -235,7 +235,9 @@ const pets = [
 <div>
   <h1 className="title">My pets:</h1>
   <ul>
-    <PetInfo
+    <PetInfo pets.map() {
+
+    }
       name={pets[0].name}
       age={pets[0].age}
       species={pets[0].species}
