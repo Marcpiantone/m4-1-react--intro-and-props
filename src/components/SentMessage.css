@@ -1,0 +1,8 @@
+#sent {
+  justify-content: flex-end;
+}
+
+#sent .chat-messageBody {
+  color: #fff;
+  background-color: #1185f7;
+}

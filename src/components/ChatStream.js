@@ -15,8 +15,20 @@ import ChatMessage from "./ChatMessage";
 const ChatStream = (props) => {
   return (
     <section className="chat-stream">
-      {props.messages.map((message) => {
-        return <ChatMessage msg={message} />;
+      {props.messages.map((message, index) => {
+        let messageType;
+        if (message.user === props.currentUser) {
+          messageType = "sent";
+        } else {
+          messageType = "received";
+        }
+        return (
+          <ChatMessage
+            msg={message}
+            messageType={messageType}
+            key={index + "key"}
+          />
+        );
       })}
     </section>
   );

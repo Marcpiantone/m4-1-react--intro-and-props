@@ -1,4 +1,4 @@
-# Module 4.1 Intro to React and Props
+x# Module 4.1 Intro to React and Props
 
 ## Setup
 
@@ -92,7 +92,7 @@ This data is defined in `src/data.js`. It's some fake data we can use to populat
 Our `App` component, in `src/components/App.js`, renders the following:
 
 ```jsx
-<div className='wrapper'>
+<div className="wrapper">
   <Header />
   <ChatStream />
   <Footer />
